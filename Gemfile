@@ -52,7 +52,7 @@ group :development do
   gem 'haml-rails'
   gem 'bootstrap-sass'
   gem 'execjs'
-
+  gem 'record_tag_helper','~> 1.0'
 end
 
 group :test do
