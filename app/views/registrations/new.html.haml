@@ -2,9 +2,12 @@
   .col-xs-6.left-content
     %h1 #TwiClone
     %p.ex
-      このサイトは、お試し的な
+      このサイトはお試し的な呟くやつです
       %p.by
         開発者: @ohataken デザイン: @keito0904 企画: @saiwaki14 編集: @DASAlTAMA
+      - if notice
+        %p
+          .alert.alert-info= notice
   .col-xs-6.right-content
     = form_for @user, url: registrations_path, method: :post do |f|
       %h2
